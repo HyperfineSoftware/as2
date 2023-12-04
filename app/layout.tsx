@@ -1,12 +1,12 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
 import { GoogleTagManager } from '@next/third-parties/google';
 import '../styles/globals.css';
 import { siteConfig } from '@/config/site';
 
 const GA_MEASUREMENT_ID = 'G-CS5XEFS7KQ';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -56,9 +56,8 @@ interface RootLayoutProps {
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
-}) {
+}: RootLayoutProps)
+{
   return (
     <html lang="en">
       <head />

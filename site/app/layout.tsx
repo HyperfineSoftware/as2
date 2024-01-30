@@ -5,7 +5,6 @@ import '../styles/globals.css';
 import { siteConfig } from '@/config/site';
 
 const GA_MEASUREMENT_ID = 'G-CS5XEFS7KQ';
-
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
